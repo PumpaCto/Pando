@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Özel stiller */
+body {
+  @apply bg-[#0f0f0f] text-white font-sans;
+}
+
+.glow-text {
+  text-shadow: 0 0 10px #ff6b00, 0 0 20px #ff6b00, 0 0 30px #ff6b00;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-orange-400 mb-6 text-center;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-300 mb-4 text-center;
+}
+
+.button-primary {
+  @apply bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-xl shadow-md transition-all;
+}
+
+.nav-link {
+  @apply text-orange-300 hover:text-white transition-colors duration-200;
+}
