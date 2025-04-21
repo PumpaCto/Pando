@@ -1,21 +1,24 @@
-import Head from 'next/head';
+import Image from 'next/image';
 
 export default function ComingSoon() {
   return (
-    <>
-      <Head>
-        <title>Coming Soon – PumpaVerse</title>
-      </Head>
-      <section className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-5xl font-bold text-orange-400 mb-4 animate-bounce">Coming Soon...</h1>
-        <p className="text-lg text-gray-300 mb-8 max-w-xl">
-          The next chapter of the Pumpa story is being written.
-          <br />
-          NFTs. Game. Lore. Merch. And more.
-        </p>
-        <div className="w-16 h-16 border-4 border-orange-500 border-dashed rounded-full animate-spin"></div>
-        <p className="mt-6 text-sm text-gray-500">Launching in 2025. Be ready.</p>
-      </section>
-    </>
+    <section className="section text-center">
+      <h1 className="section-title">PumpaVerse is Coming</h1>
+      <p className="section-subtitle max-w-2xl mx-auto">
+        An open-world, story-driven, anime-inspired crypto game built on community dreams and degenerate glory.  
+        Our devs haven’t slept in days — and it’s almost ready.
+      </p>
+
+      <div className="mt-10">
+        <Image
+          src="/hero-banner.png"
+          alt="PumpaVerse Teaser"
+          width={800}
+          height={400}
+          className="mx-auto rounded-xl border border-orange-500 shadow-lg"
+        />
+        <p className="text-orange-400 mt-6 font-semibold text-lg">Launch: Q3 2025</p>
+      </div>
+    </section>
   );
 }
