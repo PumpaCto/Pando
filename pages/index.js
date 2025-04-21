@@ -1,10 +1,10 @@
-import AnimatedBanner from '@/components/AnimatedBanner';
-import ScrollQuote from '@/components/ScrollQuote';
-import Stats from '@/components/Stats';
-import Testimonials from '@/components/Testimonials';
-import TokenomicsChart from '@/components/TokenomicsChart';
-import PartnerLogos from '@/components/PartnerLogos';
-import Leaderboard from '@/components/Leaderboard';
+import AnimatedBanner from '../components/AnimatedBanner';
+import ScrollQuote from '../components/ScrollQuote';
+import Stats from '../components/Stats';
+import Testimonials from '../components/Testimonials';
+import TokenomicsChart from '../components/TokenomicsChart';
+import PartnerLogos from '../components/PartnerLogos';
+import Leaderboard from '../components/Leaderboard';
 
 export default function Home() {
   return (
@@ -18,4 +18,4 @@ export default function Home() {
       <Leaderboard />
     </div>
   );
-}
+}.
