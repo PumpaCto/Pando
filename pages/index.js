@@ -1,23 +1,21 @@
-import Head from 'next/head';
-import Testimonials from '../components/Testimonials';
-import Stats from '../components/Stats';
-import AnimatedBanner from '../components/AnimatedBanner';
-import TokenomicsChart from '../components/TokenomicsChart';
-import PartnerLogos from '../components/PartnerLogos';
+import AnimatedBanner from '@/components/AnimatedBanner';
+import ScrollQuote from '@/components/ScrollQuote';
+import Stats from '@/components/Stats';
+import Testimonials from '@/components/Testimonials';
+import TokenomicsChart from '@/components/TokenomicsChart';
+import PartnerLogos from '@/components/PartnerLogos';
+import Leaderboard from '@/components/Leaderboard';
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Pumpa Token - Home</title>
-      </Head>
-      <main className="pt-28 px-4 text-center">
-        <AnimatedBanner />
-        <Stats />
-        <TokenomicsChart />
-        <PartnerLogos />
-        <Testimonials />
-      </main>
-    </>
+    <div className="space-y-20">
+      <ScrollQuote />
+      <AnimatedBanner />
+      <Stats />
+      <Testimonials />
+      <TokenomicsChart />
+      <PartnerLogos />
+      <Leaderboard />
+    </div>
   );
 }
