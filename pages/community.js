@@ -1,31 +1,34 @@
-import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Community() {
   return (
-    <>
-      <Head>
-        <title>Join the Pumpa Community</title>
-      </Head>
-      <section className="min-h-screen bg-black text-white px-4 pt-32 pb-20 animate-fade">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-orange-400 mb-6">Join the Pumpa Community</h1>
-          <p className="text-lg text-gray-300 mb-10">
-            Be part of something bigger. Engage, meme, trade, build — together.
-          </p>
-          <div className="flex justify-center flex-wrap gap-6">
-            <a href="https://t.me/pumpatoken" target="_blank" className="flex items-center gap-2 bg-cyan-400 hover:bg-cyan-500 text-black px-6 py-3 rounded-xl shadow-md transition-all">
-              <Image src="/icon-telegram.png" width={24} height={24} alt="Telegram" /> Telegram
-            </a>
-            <a href="https://x.com/Pumpa_Cto" target="_blank" className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl shadow-md transition-all">
-              <Image src="/icon-twitter.png" width={24} height={24} alt="Twitter" /> Twitter
-            </a>
-            <a href="https://www.tiktok.com/@pumpa.token" target="_blank" className="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-xl shadow-md transition-all">
-              <Image src="/icon-tiktok.png" width={24} height={24} alt="TikTok" /> TikTok
-            </a>
-          </div>
-        </div>
-      </section>
-    </>
+    <section className="section text-center">
+      <h1 className="section-title">Join the Pumpa Community</h1>
+      <p className="section-subtitle max-w-2xl mx-auto">
+        Be part of a movement that’s built on broken dreams and fueled by collective hope. Join our Telegram, follow us on X, and vibe with us on TikTok.
+      </p>
+
+      <div className="flex justify-center gap-6 mt-10 flex-wrap">
+        <a href="https://t.me/pumpatoken" target="_blank" rel="noopener noreferrer">
+          <Image src="/icon-telegram.svg" alt="Telegram" width={48} height={48} />
+        </a>
+        <a href="https://x.com/Pumpa_Cto" target="_blank" rel="noopener noreferrer">
+          <Image src="/icon-twitter.svg" alt="Twitter" width={48} height={48} />
+        </a>
+        <a href="https://www.tiktok.com/@pumpa.token" target="_blank" rel="noopener noreferrer">
+          <Image src="/icon-tiktok.svg" alt="TikTok" width={48} height={48} />
+        </a>
+      </div>
+
+      <div className="mt-10">
+        <Image
+          src="/community-art.png"
+          alt="Pumpa Community"
+          width={600}
+          height={400}
+          className="mx-auto rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
   );
 }
