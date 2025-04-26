@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <title>Pumpa Token | Your Last Chance, Your Real One</title>
-        <meta name="description" content="Pumpa Token - Anime, Crypto, GameFi, AI. The revolution is here!" />
+        <meta name="description" content="Pumpa Token - Anime, Crypto, GameFi, AI. Coming soon to Pump.fun!" />
       </Head>
 
       <main className="flex flex-col items-center justify-center min-h-screen py-16 px-4 bg-gradient-to-b from-black to-gray-900 text-white">
@@ -22,7 +22,7 @@ export default function Home() {
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold text-orange-400 text-center mb-4 animate-pulse">
-          Pumpa Token is Live!
+          Pumpa Token is Coming Soon!
         </h1>
 
         {/* Subtext */}
@@ -32,9 +32,11 @@ export default function Home() {
 
         {/* Buy Now Button */}
         <a
-          href="https://pump.fun/38LeDsPGzzzpJYvcXDueXfj2tRjwcn3wBbK3TpNfpump"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            alert('SOON');
+          }}
           className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition mb-4"
         >
           Buy Now
@@ -42,7 +44,7 @@ export default function Home() {
 
         {/* Contract Address */}
         <div className="bg-black/50 border border-orange-400 text-orange-300 px-4 py-2 rounded-xl text-sm font-mono shadow-md text-center">
-          <strong>CA:</strong> 38LeDsPGzzzpJYvcXDueXfj2tRjwcn3wBbK3TpNfpump
+          <strong>CA:</strong> SOON
         </div>
 
         {/* Spacer */}
